@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background(51);
+  background(51,50);
   ps.addParticle(mouseX, mouseY);
 
   // Apply gravity force to all Particles

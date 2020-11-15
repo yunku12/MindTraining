@@ -10,8 +10,6 @@ class ParticleSystem {
 
   addParticle(x, y) {
     if (x !== undefined && y !== undefined) {
-      this.particles.push(new Particle(x, y));
-    } else {
       this.particles.push(new Particle(this.origin.x, this.origin.y));
     }
   }
