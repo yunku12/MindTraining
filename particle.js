@@ -12,6 +12,7 @@ class Particle {
     this.velocity = createVector(random(-1, 1), random(-1, 0));
     this.acceleration = createVector(0, 0);
     this.lifespan = 255.0;
+    this.randomParticle = random(1,10);
   }
 
   run() {
@@ -27,17 +28,17 @@ class Particle {
   update() {
     this.velocity.add(this.acceleration);
     this.position.add(this.velocity);
-    this.lifespan -= 2;
+    this.lifespan -= 1;
 
-    this.velocity.limit(5);
+    this.velocity.limit(1);
   }
 
   // Method to display
   display() {
-    stroke(255, this.lifespan);
+    stroke(5,105,255, this.lifespan);
     strokeWeight(2);
-    fill(255, this.lifespan);
-    ellipse(this.position.x, this.position.y, 12, 12);
+    fill(5,105,255, this.lifespan);
+    ellipse(this.position.x, this.position.y, this.randomParticle, this.randomParticle );
   }
 
   // Is the particle still useful?
