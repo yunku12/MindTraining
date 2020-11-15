@@ -6,7 +6,7 @@ let ps;
 let repeller;
 
 function setup() {
-  createCanvas(640, 360);
+  createCanvas(640, 860);
   ps = new ParticleSystem(createVector(width / 2, 50));
   repeller = new Repeller(width / 2, height *0.6);
 }
