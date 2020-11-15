@@ -8,7 +8,7 @@ let repeller;
 function setup() {
   createCanvas(640, 360);
   ps = new ParticleSystem(createVector(width / 2, 50));
-  repeller = new Repeller(width / 2, height / 2);
+  repeller = new Repeller(width / 2, height *0.6);
 }
 
 function draw() {
